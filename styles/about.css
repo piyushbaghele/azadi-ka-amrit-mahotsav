@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(220, 220, 220);
+  background-repeat: no-repeat;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  background-color: #272c4c;
+  height: 40px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+
+  z-index: 1000;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  border: 0 2px 0 2px;
+  transform: scale(1.1);
+  padding: 2px;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f96207;
+  transition: border-bottom 0.3s ease-in-out;
+  color: #f96207;
+  transition: color 0.3s ease-in-out, border-bottom 3s ease-in-out;
+}
+
+.foot {
+  background-color: #272c4c;
+  height: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  bottom: 0;
+  padding-top: 20px;
+}
+
+.a-img {
+  height: 40px;
+  width: auto;
+}
+
+main {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  top: 50px;
+  overflow: hidden;
+  min-height: calc(100vh - 300px);
+  margin-top: 60px;
+}
+
+.abt-img {
+  width: 100%;
+}
+
+.abt-container {
+  margin-top: 70px;
+  position: relative;
+  max-width: 100%;
+  color: #272c4c;
+}
+
+.about {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.about2 a {
+  text-decoration: none;
+  color: #272c4c;
+}
+
+.about2 {
+  position: absolute;
+  top: 80%;
+  left: 7%;
+  font-weight: bold;
+  color: #272c4c;
+}
+
+.abt-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  margin-top: 0;
+}
+
+main div.abt-main {
+  height: auto;
+  padding: 20px;
+}
+
+.img-ctn1 {
+  height: 200px;
+  float: right;
+  border-radius: 20px;
+}
+
+main div.abt-container {
+  margin: 30px;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffe75f;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fce356;
+}
+
+.container {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  /* Set container width to 100% */
+  background: #ffe75f;
+  border-radius: 12px;
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  /* Set up scroll snapping */
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+
+}
+
+.container .card {
+  flex: 0 0 calc(50% - 6px);
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  /* Add scroll snap align property */
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.card .image {
+  height: 100px;
+  width: 100px;
+  padding: 4px;
+  background: #ffe75f;
+  border-radius: 50%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.card h2 {
+  margin-top: 25px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card p {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+  overflow: hidden;
+}
+
+.pm {
+  z-index: 3;
+}
+
+main div.abt-main {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: block;
+  border-radius: 30px;
+
+}
+
+.theme h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  display: block;
+}
+
+.abt {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.pm {
+  height: 350px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.pm img {
+  float: left;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.pm p {
+  margin: 20px;
+}
+
+#quote-div {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  position: relative;
+  color: #383838;
+  margin: 20px;
+  quotes: '"' '"';
+  left: 3%;
+}
+
+.up img {
+  height: 20px;
+  width: 20px;
+  aspect-ratio: 1-1;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fdd256;
+}
